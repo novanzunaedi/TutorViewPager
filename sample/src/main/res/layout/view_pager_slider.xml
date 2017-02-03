@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/container_view_pager"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <id.co.noz.viewpager.CirclePageIndicator
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/main_banner"
+        android:layout_marginBottom="8dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/indikator_slider"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:radius="4dp"
+        android:padding="4dp"
+        app:fillColor="@color/hijau_soft"
+        app:pageColor="@color/putih"/>
+
+    <ImageView
+        android:rotation="180"
+        android:layout_marginLeft="12dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/arrworight"
+        android:id="@+id/panah_kiri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/arrworight"
+        android:id="@+id/panah_kanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"/>
+
+</RelativeLayout>
